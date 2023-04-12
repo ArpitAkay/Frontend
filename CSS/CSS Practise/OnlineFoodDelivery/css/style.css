@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.up {
+    padding: 15px;
+}
+
+.up h1 {
+    color: red;
+    text-align: center;
+}
+.up h2 {
+    text-align: center;
+}
+
+.down {
+    background-color: gray;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.down img {
+    height: 40px;
+    width: 50px;
+}
+.down ul {
+    display: flex;
+}
+.down ul li {
+    list-style: none;
+    margin: 12px;
+}
+.down ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+    border-radius: 5px;
+}
+.down ul li a:hover {
+    background-color: red;
+}
+
+.container1 {
+    background-image: url('/OnlineFoodDelivery/image/mainbackground.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center center;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container1 h1 {
+    padding: 160px 0px 40px 0px;
+}
+.container1 button {
+    border-radius: 15px;
+    padding: 5px;
+    background-color: yellow;
+    border: none;
+}
+.container1 button:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+main h1 {
+    color: red;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.container2 {
+    background-color: rebeccapurple;
+    padding: 60px;
+    display: grid;
+    grid-template-columns: 480px 480px 480px;
+}
+.item1 {
+    background-color: red;
+    border-radius: 15px;
+    height: 35vh;
+    width: 25vw;
+}
+.item2 {
+    background-color: blue;
+    border-radius: 15px;    
+    height: 35vh;
+    width: 25vw;
+}
+.item3 {
+    background-color: green;
+    border-radius: 15px;
+    height: 35vh;
+    width: 25vw;
+}
+
