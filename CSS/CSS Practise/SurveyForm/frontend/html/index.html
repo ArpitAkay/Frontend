@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="/SurveyForm/Frontend/CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1>GeeksforGeeks Survey Form</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <form id="form-data">
+                <label for="name" class="text-description"><b>Name *</b></label><br>
+                <input type="text" name="name" id="name" class="input-text" placeholder="Enter your name" required><br>
+                
+                <label for="email" class="text-description"><b>Email *</b></label><br>
+                <input type="text" name="email" id="email" class="input-text" placeholder="Enter your email" required><br>
+
+                <label for="age" class="text-description"><b>Age *</b></label><br>
+                <input type="text" name="age" id="age" class="input-text" placeholder="Enter your age" required><br>
+
+                <label for="option" class="text-description"><b>Which option best describes you? *</b></label><br>
+                <select name="option" id="option">
+                    <option value="Student">Student</option>
+                    <option value="Intern">Intern</option>
+                    <option value="Professional">Professional</option>
+                    <option value="Other">Other</option>
+                </select><br>
+
+                <label  class="text-description"><b>Would you recommend GeeksforGeeks to a friend? *</b></label><br>
+                <label for="yes" class="input-text">
+                    <input type="radio" name="recommend" id="yes" class="items" value="Yes">Yes
+                </label><br>
+
+                <label for="no" class="input-text">
+                    <input type="radio" name="recommend" id="no" value="No">No
+                </label><br>
+
+                <label for="maybe"  class="input-text">
+                    <input type="radio" name="recommend" id="maybe" value="Maybe">Maybe
+                </label><br>
+
+                <label class="text-description"><b>Languages and Frameworks known<small>(Check all that apply) *</small></b></label><br>
+
+                <input type="checkbox" id="c" class="input-checkbox" value="C"><label for="c">C</label><br>
+                <input type="checkbox" id="c++"  class="input-checkbox" value="C++"><label for="c++">C++</label><br>
+                <input type="checkbox" id="c#" class="input-checkbox" value="C#"><label for="c#">C#</label><br>
+                <input type="checkbox" id="java" class="input-checkbox" value="Java"><label for="java">Java</label><br>
+                <input type="checkbox" id="python" class="input-checkbox" value="Python"><label for="python">Python</label><br>
+                <input type="checkbox" id="javascript" class="input-checkbox"  value="JavaScript"><label for="javascript">JavaScript</label><br>
+                <input type="checkbox" id="react" class="input-checkbox" value="React"><label for="react">React</label><br>
+                <input type="checkbox" id="angular" class="input-checkbox" value="Angular"><label for="angular">Angular</label><br>
+                <input type="checkbox" id="django"  class="input-checkbox" value="Django"><label for="django">Django</label><br>
+                <input type="checkbox" id="spring"  class="input-checkbox" value="Spring"><label for="spring">Spring</label><br>
+
+                <label for="suggestions" class="text-description"><b>Any comments or suggestions</b></label><br>
+                <textarea name="suggestions" id="suggestions" cols="61" rows="3"></textarea><br>
+
+                <input type="submit" value="Submit" id="submit-btn">
+            </form>
+        </div>
+    </main>
+</body>
+<script src="/SurveyForm/Frontend/JS/script.js"></script>
+</html>

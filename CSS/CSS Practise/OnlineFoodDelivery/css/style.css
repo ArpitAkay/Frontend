@@ -47,11 +47,11 @@
 }
 
 .container1 {
-    background-image: url('/OnlineFoodDelivery/image/mainbackground.png');
+    background-image: url('https://source.unsplash.com/1500x1200/?food delivery');
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center center;
-    height: 90vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,34 +70,55 @@
     cursor: pointer;
 }
 
+.catalog {
+    display: flex;
+    margin-top: 60px;
+}
+.catalog-item1 {
+    background-image: url('https://source.unsplash.com/370x280/?chef');
+    height: 20vh;
+    width: 20vw;
+    border-radius: 25px;
+    margin-right: 120px;
+}
+.catalog-item2 {
+    background-image: url('https://source.unsplash.com/370x280/?pizza specials');
+    height: 20vh;
+    width: 20vw;
+    border-radius: 25px;
+}
+
 main h1 {
-    color: red;
     text-align: center;
     padding-top: 10px;
 }
 
 .container2 {
-    background-color: rebeccapurple;
     padding: 60px;
     display: grid;
     grid-template-columns: 480px 480px 480px;
 }
 .item1 {
-    background-color: red;
+    background-image: url('https://source.unsplash.com/370x290/?pizza');
     border-radius: 15px;
     height: 35vh;
     width: 25vw;
 }
 .item2 {
-    background-color: blue;
+    background-image: url('https://source.unsplash.com/370x290/?cheese');
     border-radius: 15px;    
     height: 35vh;
     width: 25vw;
 }
 .item3 {
-    background-color: green;
+    background-image: url('https://source.unsplash.com/370x290/?food');
     border-radius: 15px;
     height: 35vh;
     width: 25vw;
 }
-
+footer p {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
