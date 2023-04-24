@@ -5,8 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactus</title>
+    <link rel="stylesheet" href="/OnlineFoodDelivery/css/contact.css">
 </head>
 <body>
-    <h1>Contactus</h1>
+    <div class="container">
+        <h1>Contact Us</h1>
+
+        <form id="form-data">
+            <label><h3>Type of Query</h3></label>
+
+            <select name="query" id="query">
+                <option value="Select">Select</option>
+                <option value="Order related issues">Order related issues</option>
+                <option value="Site related issue">Site related issue</option>
+                <option value="Complaint related issue">Complaint related issue</option>
+                <option value="Other">Other</option>
+            </select><br>
+
+            <label><h3>Name</h3></label>
+            <input type="text" name="name" id="name" class="form-elements-alignment"><br>
+
+            <label><h3>Email-Id</h3></label>
+            <input type="text" name="email-id" id="email-id" class="form-elements-alignment"><br>
+
+            <label><h3>Phone Number</h3></label>
+            <input type="text" name="phone-number" id="phone-number" class="form-elements-alignment"><br>
+
+            <label><h3 id="member">Are you a member of OnlineFoodShop : </h3></label>
+
+            <label for="Yes">Yes 
+                <input type="radio" name="member" id="Yes" class="input-radio-alignment" value="Yes">
+            </label>
+
+            <label for="No">No 
+                <input type="radio" name="member" id="No" class="input-radio-alignment" value="No"><br>
+            </label>
+
+
+            <label><h3>Ellaborate your query</h3></label>
+            <textarea name="explain-query" id="explain-query" cols="30" rows="10"></textarea><br>
+            <input type="submit" value="Submit" class="btn">
+            <input type="submit" value="Reset" class="btn">
+        </form>
+    </div>
+
 </body>
 </html>

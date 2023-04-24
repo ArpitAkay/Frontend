@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: grey ;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#form-data select {
+    padding: 5px;
+    height: 35px;
+    width: 435px;
+    font-size: 16px;
+}
+.form-elements-alignment {
+    padding: 7px;
+    height: 20px;
+    width: 418px;
+    font-size: 16px;
+}
+#member {
+    display: inline;
+}
+textarea {
+    width: 415px;
+    padding: 10px;
+    font-size: 16px;
+}
+.btn {
+    padding: 4px;
+}

@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    padding: 2vh 1vw;
+}
+.left-box {
+    background-image: url('/EventWebpage/image/gfg9.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 49vw;
+    height: 96vh;
+    display: flex;
+    justify-content: center;
+}
+.left-box-item {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 35vw;
+    height: 37vh;
+    padding: 42px;
+    font-size: 15px;
+    color: white;
+    margin-top: 40px;
+}
+.left-box-item h1 {
+    font-size: 49px;
+}
+
+.right-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 49vw;
+    height: 96vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly
+}
+.right-box-item {
+    background-color: white;
+    width: 40vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+}
+.right-box-item-left {
+    background-color: black;
+    color: white;
+    width: 50vw;
+    padding-top: 55px;
+}
+.right-box-item-left h1 {
+    text-align: center;
+}
+
+.right-box-item-right {
+    padding: 10px 0px 0px 10px;
+}
+.right-box-item-right p {
+    padding-top: 10px;
+    font-size: 15px;
+}
+.right-box-item-right a {
+    background-color: white;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid black;
+    font-size: 15px;
+    position: relative;
+    top: 46px;
+}
