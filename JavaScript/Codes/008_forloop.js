@@ -13,6 +13,7 @@ let marks = {
     "Krishna": 45
 }
 
+// for-in loop
 for(let mark in marks) {
     console.log("Marks of " + mark + " is " + marks[mark]);
 }
