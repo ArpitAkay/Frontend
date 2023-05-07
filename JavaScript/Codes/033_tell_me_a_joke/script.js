@@ -1,0 +1,6 @@
+let jokeArray = ["Chuck Norris once won American Idol using sign language..", "Every morning, Chuck Norris gets up and splashes boiling oil in his face to wake him up.", "Chuck Norris can have his cake, eat it, then roundhouse kick you in the face with the extra power it gave him.", "Chuck Norris will personally come over and baptize your son if you name him Walker or Texas Ranger.", "Chuck Norris does not value money. He instead pays for goods and services with the teeth of his enemies.", "Chuck Norris made Ferris work on his day off.", "Only God is allowed to edit Chuck Norris' Wikipedia page.", "If you see Chuck Norris at a picnic, beware: Chuck Norris can decapitate anyone at any time with a flying paper plate.", "The only time Chuck Norris was ever beaten was in a fictional movie, Way Of The Dragon, by Bruce Lee. Both Lee and his son Brandon would later die in mysterious curcumstances. This is not a motherfucking coincidence.", "Chuck Norris once finished a round of golf at 72 under par."];
+
+let randomIndex = Math.floor(Math.random() * jokeArray.length);
+
+let divElement = document.getElementsByClassName("container");
+divElement[0].innerHTML = jokeArray[randomIndex];

@@ -15,7 +15,11 @@ while(i < 5) {
     let playerChoise = prompt("Choose any stone, paper or scissor");
     playerChoise = playerChoise.toLowerCase();
 
-    if(playerChoise === "stone" && computerChoise === "scissor") {
+    if(playerChoise === computerChoise) {
+        drawScore++;
+        message = "Draw";
+    }
+    else if(playerChoise === "stone" && computerChoise === "scissor") {
         playerScore++;
         message = "Player wins this round";
     } 
@@ -23,25 +27,13 @@ while(i < 5) {
         computerScore++;
         message = "Computer wins this round";
     }
-    else if(playerChoise === "stone" && computerChoise === "stone") {
-        drawScore++;
-        message = "Draw";
-    }
     else if(playerChoise === "paper" && computerChoise === "scissor") {
         computerScore++;
         message = "Computer wins this round";
     }
-    else if(playerChoise === "paper" && computerChoise === "paper") {
-        drawScore++;
-        message = "Draw";
-    }
     else if(playerChoise === "paper" && computerChoise === "stone") {
         playerScore++;
         message = "Player wins this round";
-    }
-    else if(playerChoise === "scissor" && computerChoise === "scissor") {
-        drawScore++;
-        message = "Draw";
     }
     else if(playerChoise === "scissor" && computerChoise === "paper") {
         playerScore++;
