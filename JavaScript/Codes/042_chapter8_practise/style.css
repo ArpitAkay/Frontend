@@ -1,0 +1,9 @@
+.bulb-container {
+    height: 340px;
+    width: 340px;
+    border-radius: 500px;
+}
+
+.bulb {
+    background-color: yellow;
+}
