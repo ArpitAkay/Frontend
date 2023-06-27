@@ -1,24 +1,64 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import About from './components/About';
+import NavBar from './components/NavBar';
+import TextForm from './components/TextForm';
+import Alert from './components/Alert';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes
+} from "react-router-dom";
 
 function App() {
+
+  const [mode, setMode] = useState(localStorage.getItem("mode"));
+
+  const [alert, setAlert] = useState(null);
+
+  const details = {
+    title: "TextUtils",
+    home: "Home",
+    about: "About",
+  }
+
+  const toggleMode = (cls) => {
+    console.log(cls);
+    if (mode === "light") {
+      setMode("dark");
+      localStorage.setItem("mode", "dark");
+      document.body.style.backgroundColor = "#212529";
+      showAlert("success", "Dark mode has been enabled");
+    }
+    else {
+      setMode("light");
+      localStorage.setItem("mode", "light");
+      document.body.style.backgroundColor = "white";
+      showAlert("success", "Light mode has been enabled");
+    }
+  }
+
+  const showAlert = (type, message) => {
+    setAlert({
+      type: type,
+      message: message
+    });
+    setTimeout(() => {
+      setAlert(null);
+    }, 1500);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <NavBar data={details} mode={mode} toggleMode={toggleMode} />
+        <Alert alert={alert} />
+        <Routes>
+          <Route exact path="/" element={<TextForm heading="Enter the text to analyze" mode={mode} showAlert={showAlert} />} />
+          <Route exact path="/about" element={<About heading="About Us" mode={mode} toggleMode={toggleMode} />} />
+        </Routes>
+      </Router>
+    </>
   );
 }
 
