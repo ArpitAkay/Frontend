@@ -86,7 +86,7 @@ function App() {
           {/* <MuiBottomNavigation /> */}
           {/* <MuiAvatar /> */}
           {/* <MuiBadge /> */}
-          {/* <MuiList /> */}
+          <MuiList />
           {/* <MuiChip /> */}
           {/* <MuiToolTip /> */}
           {/* <MuiTable /> */}
@@ -101,7 +101,7 @@ function App() {
           {/* <MuiTabs /> */}
           {/* <MuiTimeline /> */}
           {/* <MuiMasonry /> */}
-          <MuiResponsiveness />
+          {/* <MuiResponsiveness /> */}
         </div>
       </LocalizationProvider>
     </ThemeProvider>
