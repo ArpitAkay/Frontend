@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geohash Example</title>
+  </head>
+  <body>
+    <h1>Geohash Example</h1>
+
+    <div id="result"></div>
+    <div id="result2"></div>
+
+    <script type="module">
+      import Geohash from "https://cdn.jsdelivr.net/npm/latlon-geohash@2.0.0";
+      // Function to generate geohash
+      function generateGeohash(latitude, longitude) {
+        const geohash = Geohash.encode(latitude, longitude, 18);
+        return geohash;
+      }
+
+      // Example location (latitude and longitude)
+      var latitude = 12.910476327985211;
+      var longitude = 77.60161183109966;
+
+      // Generate geohash for the location
+      var geohash = generateGeohash(latitude, longitude, 6);
+
+      // Display the result
+      document.getElementById("result").innerText =
+        "Geohash for (" + latitude + ", " + longitude + "): " + geohash;
+      const latlon = Geohash.decode(geohash);
+      console.log(latlon);
+      document.getElementById("result2").innerText =
+        "Latitude : " + latlon.lat + " Longitude : " + latlon.lon;
+    </script>
+  </body>
+</html>
